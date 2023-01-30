@@ -7,11 +7,11 @@ abstract class AppPages {
   static final pages = [
     GetPage(
       name: Routes.homeScreen,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
     ),
     GetPage(
       name: Routes.homeScreen,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
     ),
   ];
 }

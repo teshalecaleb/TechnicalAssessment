@@ -6,9 +6,13 @@ import 'package:get/get.dart';
 
 import 'utils/theme/app_theme.dart';
 
-void main() {}
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -18,8 +22,9 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          //theme: AppTheme.themeData,
+          theme: AppTheme.themeData,
           initialRoute: Routes.homeScreen,
+          defaultTransition: Transition.fade,
           getPages: AppPages.pages,
         );
       },
