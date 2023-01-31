@@ -1,3 +1,4 @@
+import 'package:assesment_project/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,7 +28,7 @@ class PlayListCard extends StatelessWidget {
       ),
       child: Container(
         height: 403.h,
-        width: double.infinity,
+        width: double.infinity.w,
         padding: EdgeInsets.only(
           top: 12.h,
           left: 12.w,
@@ -82,6 +83,36 @@ class PlayListCard extends StatelessWidget {
                   'assets/icons/card/play_button.png',
                   // width: 64.w,
                   // height: 64.h,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 300.h,
+              left: 40.w,
+              child: Text(
+                'FGC Playlist',
+                style: AppTheme.cardTitle.copyWith(
+                  color: AppTheme.cardTitleColor,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 330.h,
+              left: 40.w,
+              child: Text(
+                '+18 New Videos',
+                style: AppTheme.cardDetail.copyWith(
+                  color: AppTheme.cardDetailColor,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 330.h,
+              right: 40.w,
+              child: Text(
+                '0/18',
+                style: AppTheme.cardDetail.copyWith(
+                  color: AppTheme.cardDetailColor,
                 ),
               ),
             ),

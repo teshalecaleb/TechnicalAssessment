@@ -7,11 +7,11 @@ import '../../pages/home/homescreen.dart';
 abstract class AppPages {
   static final pages = [
     GetPage(
-      name: Routes.HomeScreen,
+      name: Routes.homeScreen,
       page: () => const HomeScreen(),
     ),
     GetPage(
-      name: Routes.HomeScreenTabbar,
+      name: Routes.homeScreenTabBar,
       page: () => const HomeScreenTabbar(),
     ),
   ];

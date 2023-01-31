@@ -31,12 +31,12 @@ class AppTheme {
   );
   static TextStyle cardTitle = TextStyle(
     fontFamily: 'Times',
-    fontSize: 20.sp,
+    fontSize: 25.sp,
     fontWeight: FontWeight.w700,
   );
   static TextStyle cardDetail = TextStyle(
     fontFamily: 'Times',
-    fontSize: 12.sp,
+    fontSize: 16.sp,
     fontStyle: FontStyle.italic,
   );
   static TextStyle discordTitle = TextStyle(
