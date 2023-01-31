@@ -92,7 +92,7 @@ class PlayListCard extends StatelessWidget {
               child: Text(
                 'FGC Playlist',
                 style: AppTheme.cardTitle.copyWith(
-                  color: AppTheme.cardTitleColor,
+                  color: AppTheme.whiteColor,
                 ),
               ),
             ),

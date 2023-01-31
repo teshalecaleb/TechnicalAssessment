@@ -42,6 +42,39 @@ class HomeScreen extends StatelessWidget {
 
             PlayListCard(),
             PlayListCard(),
+            Center(
+              child: Image.asset("assets/images/verification.png"),
+            ),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 15.w),
+                child: SizedBox(
+                  width: 300.w,
+                  child: Text(
+                    'Check back soon for new clips and creator content.',
+                    softWrap: true,
+                    textAlign: TextAlign.center,
+                    maxLines: 2,
+                    style: AppTheme.discordTitle.copyWith(
+                      color: AppTheme.whiteColor,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 8.h, bottom: 40.h),
+              child: Center(
+                child: Text(
+                  'In the meantime learn more.',
+                  style: AppTheme.discordSubtitle.copyWith(
+                    color: AppTheme.subTitleColor,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+
             // SizedBox(
             //   height: 34.h,
             // ),

@@ -10,12 +10,13 @@ class AppTheme {
   static const Color backgroundColor = Color(0xff000000);
   static const Color headerprimaryColor = Color(0xfff2bc3d);
   static const Color headersecondaryColor = Color(0xffd93636);
-  static const Color cardTitleColor = Color(0xffffffff);
+  static const Color whiteColor = Color(0xffffffff);
   static const Color cardDetailColor = Color(0xfff2bc3d);
   static const Color progressIndicatorSelectedColor = Color(0xfff2bc3d);
   static const Color viewUnselectedColor = Color(0xff504c57);
   static const Color viewselectedColor = Color(0xfff2bc3d);
   static const Color tabbarIconColor = Color(0xff3c3941);
+  static const Color subTitleColor = Color(0xffa19daa);
 
   static ThemeData themeData = ThemeData(
     // primaryColor: primaryColor,
