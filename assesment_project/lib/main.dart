@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.themeData,
-          initialRoute: Routes.homeScreen,
+          initialRoute: Routes.HomeScreenTabbar,
           defaultTransition: Transition.fade,
           getPages: AppPages.pages,
         );

@@ -13,7 +13,7 @@ class AppTheme {
   static const Color cardTitleColor = Color(0xffffffff);
   static const Color cardDetailColor = Color(0xfff2bc3d);
   static const Color progressIndicatorSelectedColor = Color(0xfff2bc3d);
-  static const Color viewUnselectedColor = Color(0xff8c8797);
+  static const Color viewUnselectedColor = Color(0xff504c57);
   static const Color viewselectedColor = Color(0xfff2bc3d);
   static const Color tabbarIconColor = Color(0xff3c3941);
 
