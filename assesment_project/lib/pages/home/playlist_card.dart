@@ -45,8 +45,7 @@ class PlayListCard extends StatelessWidget {
         //       stops: [0.5, 0.5]),
         // ),
         //width: double.infinity,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Stack(
           children: [
             // Container(
             //   color: Colors.green,
@@ -61,11 +60,31 @@ class PlayListCard extends StatelessWidget {
               height: 288.h,
             ),
             // ),
-            Row(
-              children: [
-                //Text("data"),
-              ],
-            )
+
+            Positioned(
+              top: 250.h,
+              left: 200.w,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  fixedSize: Size.fromHeight(80.h),
+                  backgroundColor: Colors.transparent,
+                  //foregroundColor: Colors.transparent,
+                  //disabledBackgroundColor: Colors.transparent,
+                  //disabledForegroundColor: Colors.transparent,
+                  elevation: 0.h,
+                  //surfaceTintColor: Colors.transparent,
+                  //shadowColor: Colors.white,
+
+                  //onPrimary: Colors.transparent,
+                ),
+                onPressed: () {},
+                child: Image.asset(
+                  'assets/icons/card/play_button.png',
+                  // width: 64.w,
+                  // height: 64.h,
+                ),
+              ),
+            ),
           ],
         ),
       ),
