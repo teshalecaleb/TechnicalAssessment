@@ -32,9 +32,10 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Icon(
-                    Icons.location_on,
-                  ),
+                  Image.asset("assets/icons/tab_bare/home.png"),
+                  // Icon(
+                  //   Icons.location_on,
+                  // ),
                   Text(
                     "Home",
                     overflow: TextOverflow.visible,
@@ -50,9 +51,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Icon(
-                    Icons.location_on,
-                  ),
+                  Image.asset("assets/icons/tab_bare/discover.png"),
                   Text(
                     "Discover",
                     softWrap: false,
@@ -69,9 +68,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Icon(
-                    Icons.location_on,
-                  ),
+                  Image.asset("assets/icons/tab_bare/watch.png"),
                   Text(
                     "Watch",
                     overflow: TextOverflow.visible,
@@ -87,9 +84,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Icon(
-                    Icons.location_on,
-                  ),
+                  Image.asset("assets/icons/tab_bare/inbox.png"),
                   Text(
                     "Inbox",
                     overflow: TextOverflow.visible,
@@ -105,9 +100,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Icon(
-                    Icons.location_on,
-                  ),
+                  Image.asset("assets/icons/tab_bare/profile.png"),
                   Text(
                     "Profile",
                     overflow: TextOverflow.visible,
