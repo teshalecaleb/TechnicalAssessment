@@ -18,8 +18,8 @@ class PlayListCard extends StatelessWidget {
     return Card(
       margin: EdgeInsets.symmetric(horizontal: 15.w, vertical: 32.h),
       color: Colors.transparent,
-      shadowColor: Color(0xff504c57),
-      surfaceTintColor: Color(0xfff28262C33),
+      shadowColor: const Color(0xff504c57),
+      surfaceTintColor: const Color(0x28262C33),
       elevation: 0.2.h,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(32.r),
@@ -123,7 +123,7 @@ class PlayListCard extends StatelessWidget {
               left: 40.w,
               child: SizedBox(
                 width: 239.w,
-                child: PlayProgressIndicator(),
+                child: const PlayProgressIndicator(),
               ),
             ),
           ],

@@ -26,7 +26,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
         controller: tabController,
         tabs: [
           Tab(
-            child: Container(
+            child: SizedBox(
               //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
@@ -36,7 +36,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
                   // Icon(
                   //   Icons.location_on,
                   // ),
-                  Text(
+                  const Text(
                     "Home",
                     overflow: TextOverflow.visible,
                   ),
@@ -45,14 +45,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
             ),
           ),
           Tab(
-            child: Container(
+            child: SizedBox(
               //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset("assets/icons/tab_bare/discover.png"),
-                  Text(
+                  const Text(
                     "Discover",
                     softWrap: false,
                     overflow: TextOverflow.visible,
@@ -62,14 +62,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
             ),
           ),
           Tab(
-            child: Container(
+            child: SizedBox(
               //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset("assets/icons/tab_bare/watch.png"),
-                  Text(
+                  const Text(
                     "Watch",
                     overflow: TextOverflow.visible,
                   ),
@@ -78,14 +78,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
             ),
           ),
           Tab(
-            child: Container(
+            child: SizedBox(
               //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset("assets/icons/tab_bare/inbox.png"),
-                  Text(
+                  const Text(
                     "Inbox",
                     overflow: TextOverflow.visible,
                   ),
@@ -94,14 +94,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
             ),
           ),
           Tab(
-            child: Container(
+            child: SizedBox(
               // color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset("assets/icons/tab_bare/profile.png"),
-                  Text(
+                  const Text(
                     "Profile",
                     overflow: TextOverflow.visible,
                   ),
@@ -113,7 +113,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
       ),
       body: TabBarView(
         controller: tabController,
-        children: [
+        children: const [
           HomeScreen(),
           HomeScreen(),
           HomeScreen(),
