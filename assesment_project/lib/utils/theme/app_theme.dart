@@ -17,6 +17,7 @@ class AppTheme {
   static const Color viewselectedColor = Color(0xfff2bc3d);
   static const Color tabbarIconColor = Color(0xff3c3941);
   static const Color subTitleColor = Color(0xffa19daa);
+  static const Color buttonColor = Color(0xff392904);
 
   static ThemeData themeData = ThemeData(
     // primaryColor: primaryColor,

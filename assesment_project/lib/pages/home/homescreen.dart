@@ -74,6 +74,60 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(right: 15.w, left: 15.w, bottom: 35.h),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(56.r),
+                  ),
+                  gradient: LinearGradient(
+                    colors: [AppTheme.cardDetailColor, AppTheme.buttonColor],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    // onSurface: Colors.transparent,
+                    // onPrimary: Colors.transparent,
+                    side: BorderSide(
+                      color: Colors.transparent,
+                      width: 0.5.w,
+                    ),
+                    backgroundColor: Colors.transparent,
+                    // primary: Colors.transparent,
+                    elevation: 0.h,
+                    // disabledBackgroundColor: Colors.transparent,
+                    // disabledForegroundColor: Colors.transparent,
+                    // foregroundColor: Colors.transparent,
+                    // surfaceTintColor: Colors.transparent,
+                    shadowColor: Colors.transparent,
+                    //backgroundColor: AppTheme.buttonColor,
+                    // shape: RoundedRectangleBorder(
+                    //   side: BorderSide(
+                    //     width: 0.5.w,
+                    //     color: Colors.transparent,
+                    //   ),
+                    //   borderRadius: BorderRadius.all(
+                    //     Radius.circular(56.r),
+                    //   ),
+                    // ),
+                  ),
+                  onPressed: () {},
+                  child: Row(
+                    children: [
+                      Text(
+                        'Tap to Learn More',
+                        style: AppTheme.buttonText.copyWith(
+                          color: AppTheme.whiteColor,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
 
             // SizedBox(
             //   height: 34.h,
