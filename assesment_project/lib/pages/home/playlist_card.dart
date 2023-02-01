@@ -2,6 +2,8 @@ import 'package:assesment_project/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../widgets/home/progress_indicator.dart';
+
 class PlayListCard extends StatelessWidget {
   final String? cardTitle;
   final String? cardDetail;
@@ -114,6 +116,14 @@ class PlayListCard extends StatelessWidget {
                 style: AppTheme.cardDetail.copyWith(
                   color: AppTheme.cardDetailColor,
                 ),
+              ),
+            ),
+            Positioned(
+              top: 366.h,
+              left: 40.w,
+              child: SizedBox(
+                width: 239.w,
+                child: PlayProgressIndicator(),
               ),
             ),
           ],

@@ -25,6 +25,8 @@ class AppTheme {
     //       primary: primaryColor,
     //       secondary:
     //     ),
+    useMaterial3: true,
+    colorSchemeSeed: cardDetailColor,
     scaffoldBackgroundColor: backgroundColor,
   );
   static TextStyle header = GoogleFonts.openSans(

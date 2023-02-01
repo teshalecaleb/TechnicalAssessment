@@ -40,8 +40,8 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            PlayListCard(),
-            PlayListCard(),
+            const PlayListCard(),
+            const PlayListCard(),
             Center(
               child: Image.asset("assets/images/verification.png"),
             ),
@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.all(
                     Radius.circular(56.r),
                   ),
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [AppTheme.cardDetailColor, AppTheme.buttonColor],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
@@ -116,7 +116,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                   onPressed: () {},
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Image.asset(
+                          "assets/icons/tab_bare/home_selected_icon.png"),
+                      SizedBox(
+                        width: 16.11.w,
+                      ),
                       Text(
                         'Tap to Learn More',
                         style: AppTheme.buttonText.copyWith(
