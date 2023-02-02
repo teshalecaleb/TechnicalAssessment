@@ -1,6 +1,8 @@
 import 'package:assesment_project/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import 'homescreen.dart';
 
@@ -13,6 +15,12 @@ class HomeScreenTabbar extends StatefulWidget {
 
 class _HomeScreenTabbarState extends State<HomeScreenTabbar>
     with TickerProviderStateMixin {
+  String homeImage = "assets/icons/tab_bare/home.png";
+  String discoverImage = "assets/icons/tab_bare/discover.png";
+  String watchImage = "assets/icons/tab_bare/watch.png";
+  String inboxImage = "assets/icons/tab_bare/inbox.png";
+  String profileImage = "assets/icons/tab_bare/profile.png";
+
   @override
   Widget build(BuildContext context) {
     TabController tabController = TabController(length: 5, vsync: this);
@@ -32,9 +40,18 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Image.asset("assets/icons/tab_bare/home.png"),
+                  // tabController.index == 0
+                  //     ? Image.asset(
+                  //         "assets/icons/tab_bare/home.png",
+                  //       )
+                  //     : Image.asset(
+                  //         "assets/icons/tab_bare/watch.png",
+                  //       ),
+
+                  Image.asset(homeImage),
                   // Icon(
                   //   Icons.location_on,
+                  //   color: Colors.green,
                   // ),
                   const Text(
                     "Home",
@@ -51,7 +68,8 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Image.asset("assets/icons/tab_bare/discover.png"),
+                  // Icon(Icons.message_rounded,),
+                  Image.asset(discoverImage),
                   const Text(
                     "Discover",
                     softWrap: false,
@@ -68,7 +86,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Image.asset("assets/icons/tab_bare/watch.png"),
+                  Image.asset(watchImage),
                   const Text(
                     "Watch",
                     overflow: TextOverflow.visible,
@@ -84,7 +102,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Image.asset("assets/icons/tab_bare/inbox.png"),
+                  Image.asset(inboxImage),
                   const Text(
                     "Inbox",
                     overflow: TextOverflow.visible,
@@ -100,7 +118,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               width: 72.w,
               child: Column(
                 children: [
-                  Image.asset("assets/icons/tab_bare/profile.png"),
+                  Image.asset(profileImage),
                   const Text(
                     "Profile",
                     overflow: TextOverflow.visible,
