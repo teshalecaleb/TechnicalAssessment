@@ -60,13 +60,14 @@ class PlayListCard extends StatelessWidget {
             Image.asset(
               'assets/images/cards/card1.png',
               width: 321.w,
+              fit: BoxFit.fitWidth,
               height: 288.h,
             ),
             // ),
 
             Positioned(
               top: 250.h,
-              left: 200.w,
+              left: 220.w,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   fixedSize: Size.fromHeight(80.h),
@@ -90,7 +91,7 @@ class PlayListCard extends StatelessWidget {
             ),
             Positioned(
               top: 300.h,
-              left: 40.w,
+              left: 15.w,
               child: Text(
                 'FGC Playlist',
                 style: AppTheme.cardTitle.copyWith(
@@ -100,7 +101,7 @@ class PlayListCard extends StatelessWidget {
             ),
             Positioned(
               top: 330.h,
-              left: 40.w,
+              left: 15.w,
               child: Text(
                 '+18 New Videos',
                 style: AppTheme.cardDetail.copyWith(
@@ -110,7 +111,7 @@ class PlayListCard extends StatelessWidget {
             ),
             Positioned(
               top: 330.h,
-              right: 40.w,
+              right: 15.w,
               child: Text(
                 '0/18',
                 style: AppTheme.cardDetail.copyWith(
@@ -120,11 +121,9 @@ class PlayListCard extends StatelessWidget {
             ),
             Positioned(
               top: 366.h,
-              left: 40.w,
-              child: SizedBox(
-                width: 239.w,
-                child: const PlayProgressIndicator(),
-              ),
+              left: 15.w,
+              right: 15.w,
+              child: const PlayProgressIndicator(),
             ),
           ],
         ),

@@ -4,8 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   AppTheme._();
-
-  // ignore: use_full_hex_values_for_flutter_colors
   //static const Color primaryColor = Color(0xfff2bc3d);
   static const Color backgroundColor = Color(0xff000000);
   static const Color headerprimaryColor = Color(0xfff2bc3d);
