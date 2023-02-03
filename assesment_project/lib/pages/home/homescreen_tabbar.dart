@@ -17,7 +17,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
   String discoverImage = "assets/icons/tab_bare/discover.png";
   String watchImage = "assets/icons/tab_bare/watch.png";
   String inboxImage = "assets/icons/tab_bare/inbox.png";
-  String profileImage = "assets/icons/tab_bare/profile.png";
+  String profileImage = "assets/icons/tab_bare/profile1.png";
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +25,42 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
     return Scaffold(
       backgroundColor: Colors.transparent,
       bottomNavigationBar: TabBar(
+        // onTap: (value) {
+        //   value = tabController.index;
+        //   if (value == 0) {
+        //     setState(() {
+        //       homeImage = "assets/icons/tab_bare/discover.png";
+        //     });
+        //   }
+        //   // if (value == 1) {
+        //   //   setState(
+        //   //     () {
+        //   //       discoverImage = "assets/icons/tab_bare/discover.png";
+        //   //     },
+        //   //   );
+        //   // }
+        //   // if (value == 2) {
+        //   //   setState(
+        //   //     () {
+        //   //       watchImage = "assets/icons/tab_bare/discover.png";
+        //   //     },
+        //   //   );
+        //   // }
+        //   // if (value == 3) {
+        //   //   setState(
+        //   //     () {
+        //   //       inboxImage = "assets/icons/tab_bare/discover.png";
+        //   //     },
+        //   //   );
+        //   // }
+        //   // if (value == 4) {
+        //   //   setState(
+        //   //     () {
+        //   //       profileImage = "assets/icons/tab_bare/discover.png";
+        //   //     },
+        //   //   );
+        //   // }
+        // },
         indicatorColor: Colors.black,
         labelColor: AppTheme.viewselectedColor,
         unselectedLabelColor: AppTheme.viewUnselectedColor,
