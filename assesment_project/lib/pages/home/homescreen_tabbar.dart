@@ -61,7 +61,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
         //   //   );
         //   // }
         // },
-        indicatorColor: Colors.black,
+        indicatorColor: AppTheme.blackColor,
         labelColor: AppTheme.viewselectedColor,
         unselectedLabelColor: AppTheme.viewUnselectedColor,
         unselectedLabelStyle:
