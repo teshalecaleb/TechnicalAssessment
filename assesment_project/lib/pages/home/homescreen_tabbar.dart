@@ -64,7 +64,11 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
         indicatorColor: Colors.black,
         labelColor: AppTheme.viewselectedColor,
         unselectedLabelColor: AppTheme.viewUnselectedColor,
+        unselectedLabelStyle:
+            AppTheme.iconText.copyWith(color: AppTheme.iconTextColor),
+        labelStyle: AppTheme.iconText,
         controller: tabController,
+
         tabs: [
           Tab(
             child: SizedBox(
@@ -73,10 +77,8 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               child: Column(
                 children: [
                   Image.asset(homeImage),
-                  Text(
+                  const Text(
                     "Home",
-                    style: AppTheme.iconText,
-                    overflow: TextOverflow.visible,
                   ),
                 ],
               ),
@@ -89,11 +91,9 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               child: Column(
                 children: [
                   Image.asset(discoverImage),
-                  Text(
+                  const Text(
                     "Discover",
-                    style: AppTheme.iconText,
                     softWrap: false,
-                    overflow: TextOverflow.visible,
                   ),
                 ],
               ),
@@ -106,10 +106,8 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               child: Column(
                 children: [
                   Image.asset(watchImage),
-                  Text(
+                  const Text(
                     "Watch",
-                    style: AppTheme.iconText,
-                    overflow: TextOverflow.visible,
                   ),
                 ],
               ),
@@ -122,10 +120,8 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               child: Column(
                 children: [
                   Image.asset(inboxImage),
-                  Text(
+                  const Text(
                     "Inbox",
-                    style: AppTheme.iconText,
-                    overflow: TextOverflow.visible,
                   ),
                 ],
               ),
@@ -138,10 +134,8 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
               child: Column(
                 children: [
                   Image.asset(profileImage),
-                  Text(
+                  const Text(
                     "Profile",
-                    style: AppTheme.iconText,
-                    overflow: TextOverflow.visible,
                   ),
                 ],
               ),
