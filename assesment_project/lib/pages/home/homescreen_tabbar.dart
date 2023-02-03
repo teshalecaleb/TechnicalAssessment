@@ -93,6 +93,7 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
                   Image.asset(discoverImage),
                   const Text(
                     "Discover",
+                    overflow: TextOverflow.visible,
                     softWrap: false,
                   ),
                 ],
