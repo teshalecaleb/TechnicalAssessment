@@ -11,7 +11,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.h,
-        // toolbarHeight: 0.h,
         backgroundColor: Colors.transparent,
       ),
       body: SingleChildScrollView(
@@ -19,27 +18,38 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              //color: Colors.green,
-              //height: 48.h,
-
               width: 345.w,
               margin: EdgeInsets.only(left: 15.w, right: 15.w),
               child: Text(
                 "Trending Playlists",
-                style: AppTheme.header.copyWith(
-                  foreground: Paint()
-                    ..shader = const LinearGradient(colors: <Color>[
-                      AppTheme.headerprimaryColor,
-                      AppTheme.headersecondaryColor
-                    ]).createShader(
-                      Rect.fromLTRB(0.0.w, 100.w, 300.w, 100.w),
-                    ),
-                ),
+                style: AppTheme.header,
               ),
             ),
 
-            const PlayListCard(),
-            const PlayListCard(),
+            PlayListCard(
+              imagePath: Image.asset(
+                'assets/images/cards/card1.png',
+                width: 321.w,
+                fit: BoxFit.fitWidth,
+                height: 288.h,
+              ),
+            ),
+            PlayListCard(
+              imagePath: Image.asset(
+                'assets/images/cards/card2.png',
+                width: 321.w,
+                fit: BoxFit.fitWidth,
+                height: 288.h,
+              ),
+            ),
+            PlayListCard(
+              imagePath: Image.asset(
+                'assets/images/cards/card3.png',
+                width: 321.w,
+                fit: BoxFit.fitWidth,
+                height: 288.h,
+              ),
+            ),
             Center(
               child: Image.asset("assets/images/verification.png"),
             ),
@@ -87,30 +97,13 @@ class HomeScreen extends StatelessWidget {
                 ),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    // onSurface: Colors.transparent,
-                    // onPrimary: Colors.transparent,
                     side: BorderSide(
                       color: Colors.transparent,
                       width: 0.5.w,
                     ),
                     backgroundColor: Colors.transparent,
-                    // primary: Colors.transparent,
                     elevation: 0.h,
-                    // disabledBackgroundColor: Colors.transparent,
-                    // disabledForegroundColor: Colors.transparent,
-                    // foregroundColor: Colors.transparent,
-                    // surfaceTintColor: Colors.transparent,
                     shadowColor: Colors.transparent,
-                    //backgroundColor: AppTheme.buttonColor,
-                    // shape: RoundedRectangleBorder(
-                    //   side: BorderSide(
-                    //     width: 0.5.w,
-                    //     color: Colors.transparent,
-                    //   ),
-                    //   borderRadius: BorderRadius.all(
-                    //     Radius.circular(56.r),
-                    //   ),
-                    // ),
                   ),
                   onPressed: () {},
                   child: Row(

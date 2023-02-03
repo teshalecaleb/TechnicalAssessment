@@ -7,11 +7,9 @@ import '../../widgets/home/progress_indicator.dart';
 class PlayListCard extends StatelessWidget {
   final String? cardTitle;
   final String? cardDetail;
-  const PlayListCard({
-    super.key,
-    this.cardDetail,
-    this.cardTitle,
-  });
+  final Image? imagePath;
+  const PlayListCard(
+      {super.key, this.cardDetail, this.cardTitle, this.imagePath});
 
   @override
   Widget build(BuildContext context) {
@@ -36,35 +34,9 @@ class PlayListCard extends StatelessWidget {
           left: 12.w,
           right: 12.w,
         ),
-        //width: double.maxFinite,
-
-        // color: Colors.green,
-        // decoration: BoxDecoration(
-        //   borderRadius: BorderRadius.circular(32.r),
-        //   gradient: LinearGradient(
-        //       colors: [Color(0x28262C33), Colors.green],
-        //       begin: Alignment.topCenter,
-        //       end: Alignment.bottomCenter,
-        //       stops: [0.5, 0.5]),
-        // ),
-        //width: double.infinity,
         child: Stack(
           children: [
-            // Container(
-            //   color: Colors.green,
-            //   height: 288.h,
-            //   //width: 321.w,
-            //   width: double.infinity,
-            //   margin: EdgeInsets.only(top: 12.h, left: 12.w, right: 12.w),
-            //   child:
-            Image.asset(
-              'assets/images/cards/card1.png',
-              width: 321.w,
-              fit: BoxFit.fitWidth,
-              height: 288.h,
-            ),
-            // ),
-
+            imagePath!,
             Positioned(
               top: 250.h,
               left: 220.w,
@@ -72,20 +44,11 @@ class PlayListCard extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   fixedSize: Size.fromHeight(80.h),
                   backgroundColor: Colors.transparent,
-                  //foregroundColor: Colors.transparent,
-                  //disabledBackgroundColor: Colors.transparent,
-                  //disabledForegroundColor: Colors.transparent,
                   elevation: 0.h,
-                  //surfaceTintColor: Colors.transparent,
-                  //shadowColor: Colors.white,
-
-                  //onPrimary: Colors.transparent,
                 ),
                 onPressed: () {},
                 child: Image.asset(
                   'assets/icons/card/play_button.png',
-                  // width: 64.w,
-                  // height: 64.h,
                 ),
               ),
             ),
@@ -94,9 +57,7 @@ class PlayListCard extends StatelessWidget {
               left: 15.w,
               child: Text(
                 'FGC Playlist',
-                style: AppTheme.cardTitle.copyWith(
-                  color: AppTheme.whiteColor,
-                ),
+                style: AppTheme.cardTitle,
               ),
             ),
             Positioned(
@@ -112,11 +73,23 @@ class PlayListCard extends StatelessWidget {
             Positioned(
               top: 330.h,
               right: 15.w,
-              child: Text(
-                '0/18',
-                style: AppTheme.cardDetail.copyWith(
-                  color: AppTheme.cardDetailColor,
-                ),
+              child: Row(
+                children: [
+                  Image.asset(
+                    'assets/icons/card/show.png',
+                    height: 12.h,
+                    width: 12.w,
+                  ),
+                  SizedBox(
+                    width: 8.w,
+                  ),
+                  Text(
+                    '0/18',
+                    style: AppTheme.cardDetail.copyWith(
+                      color: AppTheme.cardDetailColor,
+                    ),
+                  ),
+                ],
               ),
             ),
             Positioned(

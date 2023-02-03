@@ -1,8 +1,6 @@
 import 'package:assesment_project/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 import 'homescreen.dart';
 
@@ -27,7 +25,6 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
     return Scaffold(
       backgroundColor: Colors.transparent,
       bottomNavigationBar: TabBar(
-        // labelColor: Colors.transparent,
         indicatorColor: Colors.black,
         labelColor: AppTheme.viewselectedColor,
         unselectedLabelColor: AppTheme.viewUnselectedColor,
@@ -35,26 +32,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
         tabs: [
           Tab(
             child: SizedBox(
-              //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
-                  // tabController.index == 0
-                  //     ? Image.asset(
-                  //         "assets/icons/tab_bare/home.png",
-                  //       )
-                  //     : Image.asset(
-                  //         "assets/icons/tab_bare/watch.png",
-                  //       ),
-
                   Image.asset(homeImage),
-                  // Icon(
-                  //   Icons.location_on,
-                  //   color: Colors.green,
-                  // ),
-                  const Text(
+                  Text(
                     "Home",
+                    style: AppTheme.iconText,
                     overflow: TextOverflow.visible,
                   ),
                 ],
@@ -63,15 +48,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
           ),
           Tab(
             child: SizedBox(
-              //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
-                  // Icon(Icons.message_rounded,),
                   Image.asset(discoverImage),
-                  const Text(
+                  Text(
                     "Discover",
+                    style: AppTheme.iconText,
                     softWrap: false,
                     overflow: TextOverflow.visible,
                   ),
@@ -81,14 +65,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
           ),
           Tab(
             child: SizedBox(
-              //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset(watchImage),
-                  const Text(
+                  Text(
                     "Watch",
+                    style: AppTheme.iconText,
                     overflow: TextOverflow.visible,
                   ),
                 ],
@@ -97,14 +81,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
           ),
           Tab(
             child: SizedBox(
-              //color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset(inboxImage),
-                  const Text(
+                  Text(
                     "Inbox",
+                    style: AppTheme.iconText,
                     overflow: TextOverflow.visible,
                   ),
                 ],
@@ -113,14 +97,14 @@ class _HomeScreenTabbarState extends State<HomeScreenTabbar>
           ),
           Tab(
             child: SizedBox(
-              // color: Colors.transparent,
               height: 49.h,
               width: 72.w,
               child: Column(
                 children: [
                   Image.asset(profileImage),
-                  const Text(
+                  Text(
                     "Profile",
+                    style: AppTheme.iconText,
                     overflow: TextOverflow.visible,
                   ),
                 ],

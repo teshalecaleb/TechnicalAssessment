@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   AppTheme._();
   //static const Color primaryColor = Color(0xfff2bc3d);
+  static const Color transparentColor = Colors.transparent;
   static const Color backgroundColor = Color(0xff000000);
   static const Color headerprimaryColor = Color(0xfff2bc3d);
   static const Color headersecondaryColor = Color(0xffd93636);
@@ -28,35 +29,32 @@ class AppTheme {
   static TextStyle header = GoogleFonts.openSans(
     fontSize: 41.sp,
     fontWeight: FontWeight.w700,
+    foreground: Paint()
+      ..shader = const LinearGradient(colors: <Color>[
+        AppTheme.headerprimaryColor,
+        AppTheme.headersecondaryColor
+      ]).createShader(
+        Rect.fromLTRB(0.0.w, 100.w, 300.w, 100.w),
+      ),
   );
   static TextStyle cardTitle = TextStyle(
     fontFamily: 'Times',
     fontSize: 25.sp,
+    color: AppTheme.whiteColor,
     fontWeight: FontWeight.w700,
   );
   static TextStyle cardDetail = TextStyle(
     fontFamily: 'Times',
     fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
     fontStyle: FontStyle.italic,
   );
-  static TextStyle discordTitle = TextStyle(
-    fontFamily: 'Times',
+  static TextStyle discordTitle = cardTitle.copyWith(
     fontSize: 22.sp,
-    fontWeight: FontWeight.w700,
   );
-  static TextStyle discordSubtitle = TextStyle(
-    fontFamily: 'Times',
-    fontSize: 13.sp,
-    fontStyle: FontStyle.italic,
-  );
-  static TextStyle buttonText = TextStyle(
-    fontFamily: 'Times',
+  static TextStyle discordSubtitle = cardDetail.copyWith();
+  static TextStyle buttonText = cardDetail.copyWith(
     fontSize: 17.sp,
-    fontStyle: FontStyle.italic,
   );
-  static TextStyle iconText = TextStyle(
-    fontFamily: 'Times',
-    fontSize: 10.sp,
-    fontStyle: FontStyle.italic,
-  );
+  static TextStyle iconText = cardDetail.copyWith();
 }
